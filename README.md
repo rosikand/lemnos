@@ -76,4 +76,4 @@ I recognize that there are probably many packages/programs out there that alread
 
 ## Name 
 
-[Hephaestus](https://en.wikipedia.org/wiki/Hephaestus) is the Greek god of blacksmiths, metalworking, carpenters, craftsmen, among others. He resides in [Lemnos](https://en.wikipedia.org/wiki/Lemnos), which, in real life, is a Greek island in the Aegean Sea. 
+> [Hephaestus](https://en.wikipedia.org/wiki/Hephaestus) is the Greek god of blacksmiths, metalworking, carpenters, craftsmen, among others. He resides in [Lemnos](https://en.wikipedia.org/wiki/Lemnos), which, in real life, is a Greek island in the Aegean Sea. 
