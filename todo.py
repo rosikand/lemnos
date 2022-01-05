@@ -75,7 +75,8 @@ def complete(idx):
 			line_count += 1
 		if curr_idx > idx:
 			line_count += 1 
-			line = str(line_count) + line[1:]
+			dot_idx = line.find(".")
+			line = str(line_count) + line[dot_idx:]
 			updated_list.write(line)
 
 		curr_idx += 1 
