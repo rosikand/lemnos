@@ -19,7 +19,7 @@ You need to have Python installed.
 1. Clone/download this repository. 
 2. `cd` into the directory when using the program. 
 
-You are good to go! You can optionally add a shebang of your Python install location to the top of `todo.py`. You can find this by typing `which python` in the command-line. Prepend that string with `#!` and add it to the top of `todo.py`. Example string: `#!/usr/bin/python3`. Then, you can simply type `./todo` to execute the program instead. To follow the reference then, just replace `python3 todo.py` with `./todo`. 
+You are good to go! You can optionally add a shebang of your Python install location to the top of `todo.py`. You can find this by typing `which python` in the command-line. Prepend that string with `#!` and add it to the top of `todo.py`. Example string: `#!/usr/bin/python3`. Then, you can simply type `./todo` to execute the program instead. To follow the reference then, just replace `python3 todo.py` with `./todo`. If you want to make this even faster, you can set up an alias of your choice. 
 
 ## Reference
 
@@ -41,13 +41,30 @@ You are good to go! You can optionally add a shebang of your Python install loca
     ```
     $ python3 todo.py
     ```
+    
+- **Show prioritized items**:
+  
+  ```
+  $ python3 todo.py p
+  ```
 
-- **Complete item at index i**
+- **Complete item at index 'i'**
   
   ```
   $ python3 todo.py complete i
   ```
+
+- **Prioritize item at index `i`**:
   
+  ```
+  $ python3 todo.py prioritize i
+  ```
+
+- **Un-prioritize item at index `i`**:
+  
+  ```
+  $ python3 todo.py unprioritize i
+  ```
 
 - **Erase entire list**:
   
