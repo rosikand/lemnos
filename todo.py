@@ -53,6 +53,69 @@ def show():
 
 	print("Number of items:", length(open(LIST_FILE_PATH)))
 
+	
+def show_priority():
+	"""
+	Function that prints out prioritized items in the list. 
+	It also displays the number of prioritized items in the 
+	list. 
+	"""
+
+	file = open(LIST_FILE_PATH)
+	count = 0 
+
+	for line in file:
+		if "*" in line:
+			count += 1
+			print(line, end='')  # use end to avoid printing \n 
+
+	print("Number of prioritized items:", count)
+
+
+def make_prioritized(idx):
+	"""
+	Function that prioritizes the element at idx. 
+	"""
+
+	# store list of lines to use later (since we will overwrite these lines) 
+	temp_file_obj = open(LIST_FILE_PATH, "r") 
+	line_list = temp_file_obj.readlines()
+	temp_file_obj.close()
+
+	updated_list = open(LIST_FILE_PATH, "w") 
+	i = 1
+	for line in line_list:
+		if i == idx:
+			dot_idx = line.find(".")
+			line = line[:dot_idx + 1] + " *" + line[dot_idx + 2:]
+
+		updated_list.write(line)
+		i += 1
+
+	updated_list.close()
+
+
+def unprioritize(idx):
+	"""
+	Function that un-prioritizes the element at idx. 
+	"""
+
+	# store list of lines to use later (since we will overwrite these lines) 
+	temp_file_obj = open(LIST_FILE_PATH, "r") 
+	line_list = temp_file_obj.readlines()
+	temp_file_obj.close()
+
+	updated_list = open(LIST_FILE_PATH, "w") 
+	i = 1
+	for line in line_list:
+		if i == idx:
+			line = line.replace("*", "")
+
+		updated_list.write(line)
+		i += 1
+
+	updated_list.close()
+	
 
 def complete(idx):
 	"""
@@ -107,8 +170,28 @@ def main():
 	# print out list if 'show' argument is specified
 	if user_arguments[0] == "show" or user_arguments[0] == "s":
 		show()
+	
+	# print out prioritized items from list 
+	if (user_arguments[0] == "priority" or user_arguments[0] == "p") and arg_count == 1:
+		show_priority()
 
-	# print out list if 'show' argument is specified
+	# prioritize element 
+	if (user_arguments[0] == "prioritize" or user_arguments[0] == "p") and arg_count == 2:
+		specified_idx = int(user_arguments[1]) 
+		if specified_idx > length(open(LIST_FILE_PATH)) or specified_idx <= 0:
+			print("Item index out of bounds")
+			sys.exit() 
+		make_prioritized(specified_idx)
+
+	# un-prioritize element 
+	if (user_arguments[0] == "unprioritize" or user_arguments[0] == "u") and arg_count == 2:
+		specified_idx = int(user_arguments[1]) 
+		if specified_idx > length(open(LIST_FILE_PATH)) or specified_idx <= 0:
+			print("Item index out of bounds")
+			sys.exit() 
+		unprioritize(specified_idx)
+
+	# print out num items in list if 'len' argument is specified
 	if user_arguments[0] == "len" or user_arguments[0] == "l":
 		print("Number of items:", length(open(LIST_FILE_PATH)))
 
