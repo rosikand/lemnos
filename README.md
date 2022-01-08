@@ -1,6 +1,6 @@
 # 🔖 Lemnos: CLI To-do List Manager
 
-This is a simple program that allows one to manage a to-do list via the command-line. 
+Lemnos is a simple program that allows one to manage a to-do list via the command-line. 
 
 ## Example 
 
