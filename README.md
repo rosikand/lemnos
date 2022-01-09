@@ -19,7 +19,7 @@ You need to have Python installed.
 1. Clone/download this repository. 
 2. `cd` into the directory when using the program. 
 
-You are good to go! You can optionally add a shebang of your Python install location to the top of `todo.py`. You can find this by typing `which python` in the command-line. Prepend that string with `#!` and add it to the top of `todo.py`. Example string: `#!/usr/bin/python3`. Then, you can simply type `./todo` to execute the program instead. To follow the reference then, just replace `python3 todo.py` with `./todo`. If you want to make this even faster, you can set up an alias of your choice. 
+You are good to go! You can optionally add a shebang of your Python install location to the top of `todo.py`. You can find this by typing `which python` in the command-line. Prepend that string with `#!` and add it to the top of `todo.py`. Example string: `#!/usr/bin/python3`. Then, you can simply type `./todo` to execute the program instead. To follow the reference then, just replace `python3 todo.py` with `./todo`. If you want to make this even faster, you can set up an alias of your choice. Alternatively, you can move the executable to `/usr/local/bin` which allows you to simply type the executable name to run the program. 
 
 ## Reference
 
