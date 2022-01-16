@@ -90,7 +90,7 @@ The program works by adding and removing content from `list.txt` so you can alte
 
 ## Email list 
 
-You can also use the script stored in `mail.py` to send an email of the list to yourself. You must install the dependencies first which are yagmail and hickory 
+You can also use the script stored in `mail.py` to send an email of the list to yourself. You must install the dependencies first which are [yagmail](https://github.com/kootenpv/yagmail) and [hickory](https://github.com/maxhumber/hickory). 
 
 You need to replace the variables at the top with your information:
 ```python
@@ -101,9 +101,12 @@ send_account_password = "johnny123"  # Password for sending email
 receiving_address = "appleseed@gmail.com"  # Email address you'd like the emails to be sent to
 ```
 
-With the help of third party packages, you can set up a recurring email sent everyday. 
+With the help of the [hickory](https://github.com/maxhumber/hickory) package, you can set up a recurring email sent every morning to yourself as a reminder: 
 
-
+```
+hickory schedule mail.py --every=@9am
+```
+Make sure to kill the script eventually if you no longer want to send and receive the emails: `hickory kill mail.py`. 
 
 ## Note
 
