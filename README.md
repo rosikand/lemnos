@@ -12,6 +12,8 @@ $ python3 todo.py show
 $ python3 todo.py complete 1
 ```
 
+You can also set up a daily recurring email sent to your inbox every morning (see section below). 
+
 ## Set up
 
 You need to have Python installed. 
