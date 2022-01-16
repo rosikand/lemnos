@@ -90,14 +90,15 @@ The program works by adding and removing content from `list.txt` so you can alte
 
 ## Email list 
 
-You can also use the script stored in `mail.py` to send an email of the list to yourself. You must install the dependencies first which are [yagmail](https://github.com/kootenpv/yagmail) and [hickory](https://github.com/maxhumber/hickory). 
+You can also use the script stored in `mail.py` to send an email of the list to yourself. You must install the dependencies first which are [yagmail](https://github.com/kootenpv/yagmail) and [hickory](https://github.com/maxhumber/hickory). Additionally, your sending email address must be a Gmail account. 
 
 You need to replace the variables at the top with your information:
+
 ```python
 # Important: variables you should define for yourself 
 your_name = "Johnny Appleseed"  # Your name
-send_address = "appleseed@gmail.com"  # Email address to send the emails from
-send_account_password = "johnny123"  # Password for sending email
+send_username = "appleseed"  # Gmail address username to send the emails from
+send_password = "johnny123"  # Password for sending email account 
 receiving_address = "appleseed@gmail.com"  # Email address you'd like the emails to be sent to
 ```
 
