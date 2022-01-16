@@ -21,6 +21,8 @@ You need to have Python installed.
 
 You are good to go! You can optionally add a shebang of your Python install location to the top of `todo.py`. You can find this by typing `which python` in the command-line. Prepend that string with `#!` and add it to the top of `todo.py`. Example string: `#!/usr/bin/python3`. Then, you can simply type `./todo` to execute the program instead. To follow the reference then, just replace `python3 todo.py` with `./todo`. If you want to make this even faster, you can set up an alias of your choice. Alternatively, you can move the executable to `/usr/local/bin` which allows you to simply type the executable name to run the program. 
 
+If you want to use the email feature, then follow the steps in the section below. 
+
 ## Reference
 
 - **Add item to list**: 
@@ -85,6 +87,23 @@ $ python3 todo.py a item
 ```
 
 The program works by adding and removing content from `list.txt` so you can alternatively manage the list via that file as well. 
+
+## Email list 
+
+You can also use the script stored in `mail.py` to send an email of the list to yourself. You must install the dependencies first which are yagmail and hickory 
+
+You need to replace the variables at the top with your information:
+```python
+# Important: variables you should define for yourself 
+your_name = "Johnny Appleseed"  # Your name
+send_address = "appleseed@gmail.com"  # Email address to send the emails from
+send_account_password = "johnny123"  # Password for sending email
+receiving_address = "appleseed@gmail.com"  # Email address you'd like the emails to be sent to
+```
+
+With the help of third party packages, you can set up a recurring email sent everyday. 
+
+
 
 ## Note
 
