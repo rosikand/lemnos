@@ -101,7 +101,9 @@ send_account_password = "johnny123"  # Password for sending email
 receiving_address = "appleseed@gmail.com"  # Email address you'd like the emails to be sent to
 ```
 
-With the help of the [hickory](https://github.com/maxhumber/hickory) package, you can set up a recurring email sent every morning to yourself as a reminder: 
+Now send an email of this list by running the script: `python3 mail.py`. 
+
+Furthermore, with the help of the [hickory](https://github.com/maxhumber/hickory) package, you can set up a recurring email sent every morning to yourself as a reminder: 
 
 ```
 hickory schedule mail.py --every=@9am
