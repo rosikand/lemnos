@@ -53,6 +53,22 @@ def show():
 
 	print("Number of items:", length(open(LIST_FILE_PATH)))
 
+
+def search(query):
+	"""
+	Function that searches the list for the query. Looks 
+	for exact match in the list. If query is not found, 
+	it prints nothing.   
+	"""
+
+	file = open(LIST_FILE_PATH)
+
+	for line in file:
+		line_list = line.split()
+		for elem in line_list:
+			if str(query) == str(elem):
+				print(line, end = '')
+
 	
 def show_priority():
 	"""
@@ -166,9 +182,13 @@ def main():
 	# add item to list if 'add' argument is specified 
 	if (user_arguments[0] == "add" or user_arguments[0] == "a") and arg_count > 1:
 		add(' '.join(user_arguments[1:]))
+	
+	# search the list with given argument as query if 'search' argument is specified
+	if (user_arguments[0] == "search" or user_arguments[0] == "s") and arg_count > 1:
+		search(' '.join(user_arguments[1:]))
 
 	# print out list if 'show' argument is specified
-	if user_arguments[0] == "show" or user_arguments[0] == "s":
+	if user_arguments[0] == "show":
 		show()
 	
 	# print out prioritized items from list 
