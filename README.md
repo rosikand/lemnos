@@ -69,6 +69,12 @@ If you want to use the email feature, then follow the steps in the section below
   ```
   $ python3 todo.py unprioritize i
   ```
+  
+- **Search for item**:
+  
+  ```
+  $ python3 todo.py search item
+  ```
 
 - **Erase entire list**:
   
