@@ -118,7 +118,7 @@ Make sure to kill the script eventually if you no longer want to send and receiv
 I recognize that there are probably many packages/programs out there that already have this functionality, but I wanted to build one from source so that I can feasibly add customizations to my personal setup as needed. Another motivation for creating this program was that the other options available are much more feature-heavy than I needed (a minimalist user experience is the main design principle here). 
 
 ## To-do 
-
+Yes... a to-do list for a to-do list app. 
 - Add search functionality 
 
 
