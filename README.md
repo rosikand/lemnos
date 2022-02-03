@@ -119,7 +119,7 @@ I recognize that there are probably many packages/programs out there that alread
 
 ## To-do 
 Yes... a to-do list for a to-do list app. 
-- ~~Add search functionality~~
+- [ ] Add search functionality
 
 
 ## Name 
