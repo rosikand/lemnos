@@ -174,7 +174,7 @@ def main():
 	user_arguments = sys.argv[1:]
 	arg_count = len(user_arguments)  # num user arguments 
 
-	# exit program if no user arguments were specified 
+	# print out list if no argument was specified 
 	if arg_count == 0:
 		show()  # show the list 
 		sys.exit() 
