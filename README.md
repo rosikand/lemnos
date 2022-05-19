@@ -127,6 +127,7 @@ I recognize that there are probably many packages/programs out there that alread
 Yes... a to-do list for a to-do list app. 
 - [x] Add search functionality
 - [ ] Write completed items to a 'completed' text file 
+- [ ] Add timestamps 
 - [ ] (Maybe) add categorical functionality via emojis or unique character identifier 
 
 ## Name 
