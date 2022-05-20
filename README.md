@@ -52,7 +52,7 @@ If you want to use the email feature, then follow the steps in the section below
   $ python3 todo.py p
   ```
 
-- **Complete item at index 'i'**
+- **Complete item at index `i`**
   
   ```
   $ python3 todo.py complete i
